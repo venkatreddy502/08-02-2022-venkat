@@ -1,0 +1,36 @@
+# include<stdio.h>
+#define MAX  20
+int main()
+{
+
+int a[MAX],n;
+
+void display(int[],int);
+void input(int[],int);
+printf("Enter no.of elements an array\t");
+scanf("%d",&n);
+input(a,n);
+printf("Array Elements\n");
+display(a,n);
+}
+void display(int a[],int n)
+{
+int i;
+
+for (i=0;i<n;i++)
+if(a[i]%2!=0)
+printf("%d\t",a[i]);
+
+for (i=0;i<n;i++)
+if(a[i]%2==0)
+printf("%d\t",a[i]);
+
+}
+
+void input(int a[],int n)
+{
+     int i;
+for(i=0;i<n;i++)
+scanf("%d",&a[i]);
+
+}
