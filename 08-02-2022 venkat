@@ -1,0 +1,15 @@
+# include<stdio.h>
+int main()
+{
+
+int n=10;
+
+void display(int);
+display(n);
+}
+void display(int n)
+{
+  printf ("%d\n", n);
+    if (n > 1)
+        display (n - 1);
+}
